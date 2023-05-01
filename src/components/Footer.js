@@ -99,7 +99,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              PRÓ-VIDA
+            <img src='src/images/img-1.jpg' type='image/jpg'/>
               <i class='fab fa-typo3' />
             </Link>
           </div>

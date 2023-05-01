@@ -27,6 +27,7 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
+    /* background: url('/img-1.jpg') center center/cover no-repeat; */
 }
 
 .fa-typo3 {

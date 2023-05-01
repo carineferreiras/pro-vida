@@ -3,6 +3,7 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
+
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -29,9 +30,12 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        logo...
-                        <i class='fab fa-typo3' />
+                    <img src='src/images/img-1.jpg' type='image/jpg'/>
+                        {/* <i class='fab fa-typo3' /> */}
                     </Link>
+
+                    
+
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
@@ -43,11 +47,30 @@ function Navbar() {
                         </li>
                         <li className='nav-item'>
                             <Link
-                                to='/products'
+                                to='/vacinas'
+                                className='nav-links'
+                                onClick={closeMobileMenu}
+                            >
+                                VACINAS
+                            </Link>
+                        </li>
+                        
+                        <li className='nav-item'>
+                            <Link
+                                to='/services'
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
                                 TRATAMENTOS
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link
+                                to='/medicina'
+                                className='nav-links'
+                                onClick={closeMobileMenu}
+                            >
+                                MEDICINA INTEGRATIVA
                             </Link>
                         </li>
 
@@ -67,5 +90,7 @@ function Navbar() {
         </>
     );
 }
+
+
 
 export default Navbar;
